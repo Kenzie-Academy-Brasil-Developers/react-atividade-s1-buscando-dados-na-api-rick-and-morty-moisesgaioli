@@ -11,9 +11,7 @@ function App() {
     .then(response => response.json())
     .then(response => setCharacterList(response.results))
     .catch(error => console.log(error));
-  }, [])
-
-  console.log(characterList)
+  }, []);
 
   return (
       <main className="main-container">
